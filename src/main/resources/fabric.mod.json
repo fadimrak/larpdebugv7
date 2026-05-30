@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "larpdebug",
+  "version": "0.1.0",
+  "name": "larpdebug-fadimrak",
+  "description": "cracked by fadimrak",
+  "authors": [
+    "fadimrak - luth"
+  ],
+  "contact": {},
+  "icon": "assets/template/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "com.larp.debug.AddonTemplate"
+    ]
+  },
+  "mixins": [
+    "larpdebug.mixins.json"
+  ],
+  "custom": {
+    "meteor-client:color": "0,153,255",
+    "modmenu": {
+      "parent": {
+        "id": "meteor-client"
+      }
+    }
+  },
+  "depends": {
+    "java": ">=21",
+    "minecraft": ["1.21.11"],
+    "meteor-client": "*"
+  }
+}
